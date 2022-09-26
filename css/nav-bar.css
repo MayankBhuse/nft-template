@@ -1,0 +1,43 @@
+/* This WIll Not Change Link to or a href Text Color*/
+a,
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Nav Bar CSS */
+.nav-bar-section .max-width {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1300px; */
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    padding: 0 10px;
+}
+
+.nav-bar-section .left-section .image-container {
+    display: flex;
+}
+
+.nav-bar-section .left-section .image-container .image-here {
+    width: 120px;
+}
+
+.nav-bar-section .right-section {
+    display: flex;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 700;
+    gap: 20px;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width:380px) {
+    .nav-bar-section .right-section {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,151 @@
+.intro-section .left-section {
+    margin-bottom: auto;
+}
+
+.intro-section .max-width {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1300px; */
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.intro-section .left-section .line-1 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 700;
+    font-size: 128px;
+}
+
+.intro-section .left-section .line-2 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.intro-section .left-section .line-3 {
+    font-family: "Press Start 2P", cursive;
+    line-height: 19.5px;
+    font-size: 12px;
+}
+
+.intro-section .left-section .line-4 {
+    font-family: "Press Start 2P", cursive;
+    line-height: 19.5px;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.intro-section .left-section .line-5 {
+    font-family: "Roboto Flex", sans-serif;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.intro-section .left-section .line-5 span {
+    font-family: "Press Start 2P", cursive;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.intro-section .left-section .line-6 {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.intro-section .left-section .line-6 .input-container input {
+    text-align: center;
+}
+
+.intro-section .left-section .line-6 .under-input-container {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.intro-section .left-section .line-7 .button-container button {
+    padding: 12px 0;
+    width: 100%;
+    background-color: #895632;
+    font-family: "Press Start 2P", cursive;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.intro-section .left-section .line-7 .button-container:hover button {
+    background-color: #bb733f;
+}
+
+.intro-section .left-section .line-8 {
+    display: flex;
+    align-items: center;
+    font-family: "Press Start 2P", cursive;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.intro-section .left-section .line-8 span {
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 8px;
+}
+
+/* Right Section */
+.intro-section .right-section {
+    position: relative;
+}
+
+.intro-section .right-section figure:before {
+    content: "";
+    background: rgb(0, 0, 0);
+    background: linear-gradient(190deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 44%, rgb(0, 0, 0) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Responsive */
+@media (max-width:1250px) {
+    .intro-section .right-section figure .image-here {
+        width: 350px;
+    }
+}
+
+@media (max-width:1000px) {
+    .intro-section .max-width {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .intro-section .left-section {
+        margin-top: -200px;
+        z-index: 1000;
+    }
+
+    .intro-section .left-section .line-8{
+        justify-content: center;
+    }
+
+    .intro-section .right-section figure .image-here {
+        width: 450px;
+    }
+}
+
+@media (max-width:500px) {
+    .intro-section .left-section .line-1 {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    .intro-section .right-section figure .image-here {
+        width: 250px;
+    }
+}
